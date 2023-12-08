@@ -54,9 +54,22 @@ export default function ClientComponent({
 `useStream` takes the serverAction (passed down from a server component), and optionally takes the arguments to be sent to the server action.
 
 It returns and array of `data` that contains the components sent in the stream as they load.
+
 `refetch` will run the server action again, adding more entries to the `data` array.
+
 `clear` empties the array of `data`.
 
 Included are examples of pagination and infinite loading.
+
+
+
+https://github.com/brandonetter/component-stream/assets/4108484/c924f0e2-c781-4f58-a0af-59f7b3b32711
+
+
+
+
+https://github.com/brandonetter/component-stream/assets/4108484/56caf7df-df31-4ac6-a228-56541a55c3be
+
+
 
 This really only forms and sends promises- and includes a helper to resolve and refetch these promises. This isn't an actual 'stream'- and as such all `write` functions must be called before the `stream()` is returned.
